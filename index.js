@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const pdf = require('html-pdf');
 const cors = require('cors');
 const pdfTemplate = require('./documents');
+const options = { format: 'A4',orientation:'landscape'};
 
 
 const app = express();
@@ -14,7 +15,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 app.post('/create-pdf', (req, res) => {
-    pdf.create(pdfTemplate(req.body), {}).toFile('result.pdf', (err) => {
+    pdf.create(pdfTemplate(req.body),options).toFile('result.pdf', (err) => {
         if(err) {
             res.send(Promise.reject());
         }
