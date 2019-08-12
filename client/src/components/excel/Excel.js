@@ -17,7 +17,6 @@ class Excel extends Component {
     this.toggle = this.toggle.bind(this);
     this.openFileBrowser = this.openFileBrowser.bind(this);
     this.renderFile = this.renderFile.bind(this);
-    this.openNewPage = this.openNewPage.bind(this);
     this.fileInput = React.createRef();
   }
 
@@ -33,8 +32,15 @@ class Excel extends Component {
             cols: resp.cols,
             rows: resp.rows
           });
+
+            console.log(resp.rows[2][2]);
+              
+          
+          
+          
         }
       }); 
+      
   }
 
   fileHandler = (event) => {    
@@ -50,6 +56,8 @@ class Excel extends Component {
           isFormInvalid: false
         });
         this.renderFile(fileObj)
+      
+        
       }    
       else{
         this.setState({
@@ -66,19 +74,17 @@ class Excel extends Component {
     });
   }
 
+
   openFileBrowser = () => {
     this.fileInput.current.click();
   }
 
-  openNewPage = (chosenItem) => {
-    const url = chosenItem === "github" ? "https://github.com/ashishd751/react-excel-renderer" : "https://medium.com/@ashishd751/render-and-display-excel-sheets-on-webpage-using-react-js-af785a5db6a7";
-    window.open(url, '_blank');
-  }
+ 
 
   render() {
     return (
       <div>
-
+            
         <Container>
         <form>
           <FormGroup row>

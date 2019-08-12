@@ -6,8 +6,9 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Cert /> 
+                
                 <Excel />
+                <Cert /> 
             </div>
         )
     }
