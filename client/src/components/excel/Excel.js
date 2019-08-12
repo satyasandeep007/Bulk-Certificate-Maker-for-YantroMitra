@@ -16,10 +16,7 @@ class Excel extends Component {
       isFormInvalid: false,
       rows: null,
       cols: null,
-      name: '',
-      receiptId: 0,
-      price1: 0,
-      price2: 0,
+      i:4
     }
     this.fileHandler = this.fileHandler.bind(this);
     this.toggle = this.toggle.bind(this);
@@ -28,7 +25,7 @@ class Excel extends Component {
     this.fileInput = React.createRef();
   }
 
-  handleChange = ({ target: { value, name }}) => this.setState({ [name]: value })
+  
 
   createAndDownloadPdf = () => {
     axios.post('/create-pdf', this.state)
@@ -36,9 +33,14 @@ class Excel extends Component {
       .then((res) => {
         const pdfBlob = new Blob([res.data], { type: 'application/pdf' });
 
-        saveAs(pdfBlob, 'newPdf.pdf');
+        saveAs(pdfBlob, `${this.state.rows[this.state.i][1]}.pdf`);
+        
       })
   }
+
+
+
+  //0//////////////////////////////////////////////////////////////////
 
   renderFile = (fileObj) => {
       //just pass the fileObj as parameter
@@ -52,13 +54,7 @@ class Excel extends Component {
             cols: resp.cols,
             rows: resp.rows
           });
-
-            console.log(resp.rows[1][1]);
-              
-          
-          
-          
-        }
+                  }
       }); 
       
   }
@@ -137,7 +133,7 @@ class Excel extends Component {
         </Container>
         <div className="App">
        
-        <button onClick={this.createAndDownloadPdf}>Download PDF</button>
+        <button onClick={this.createAndDownloadPdf}>Download PDFs</button>
       </div>
       </div>
     );

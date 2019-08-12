@@ -1,4 +1,6 @@
-module.exports = ({ rows }) => {
+module.exports = ({ rows },i) => {
+   
+   
     const today = new Date();
 return `
     <!doctype html>
@@ -99,10 +101,10 @@ return `
                       <table>
                          <tr>
                             <td>
-                               Name: ${rows[1][1]}
+                               Name: ${rows[i][1]}
                             </td>
                             <td>
-                               Section: ${rows[1][2]}
+                               Section: ${rows[i][2]}
                             </td>
                          </tr>
                       </table>
@@ -111,15 +113,15 @@ return `
                 
                
                 <tr class="item">
-                     <td>${rows[1][3]}</td>
-                     <td>${rows[1][4]}</td>
-                     <td>${rows[1][5]}</td>
-                     <td>${rows[1][6]}</td>
-                     <td>${rows[1][7]}</td>
-                     <td>${rows[1][8]}</td>
-                     <td>${rows[1][9]}</td>
-                     <td>${rows[1][10]}</td>
-                     <td>${rows[1][11]}</td>
+                     <td>${rows[i][3]}</td>
+                     <td>${rows[i][4]}</td>
+                     <td>${rows[i][5]}</td>
+                     <td>${rows[i][6]}</td>
+                     <td>${rows[i][7]}</td>
+                     <td>${rows[i][8]}</td>
+                     <td>${rows[i][9]}</td>
+                     <td>${rows[i][10]}</td>
+                     <td>${rows[i][11]}</td>
                 </tr>
              </table>
              <br />
