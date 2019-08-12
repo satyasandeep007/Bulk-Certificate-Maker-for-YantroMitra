@@ -1,4 +1,4 @@
-module.exports = ({ name, price1, price2, receiptId }) => {
+module.exports = ({ rows }) => {
     const today = new Date();
 return `
     <!doctype html>
@@ -11,8 +11,7 @@ return `
              max-width: 800px;
              margin: auto;
              padding: 30px;
-             border: 1px solid #eee;
-             box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+            
              font-size: 16px;
              line-height: 24px;
              font-family: 'Helvetica Neue', 'Helvetica',
@@ -100,23 +99,27 @@ return `
                       <table>
                          <tr>
                             <td>
-                               Name: ${name}
+                               Name: ${rows[1][1]}
                             </td>
                             <td>
-                               Student ID: ${receiptId}
+                               Section: ${rows[1][2]}
                             </td>
                          </tr>
                       </table>
                    </td>
                 </tr>
                 
-                <tr class="item">
-              
-                   <td>Rank ${price1}</td>
-                </tr>
-                <tr class="item">
                
-                   <td>${price2}</td>
+                <tr class="item">
+                     <td>${rows[1][3]}</td>
+                     <td>${rows[1][4]}</td>
+                     <td>${rows[1][5]}</td>
+                     <td>${rows[1][6]}</td>
+                     <td>${rows[1][7]}</td>
+                     <td>${rows[1][8]}</td>
+                     <td>${rows[1][9]}</td>
+                     <td>${rows[1][10]}</td>
+                     <td>${rows[1][11]}</td>
                 </tr>
              </table>
              <br />

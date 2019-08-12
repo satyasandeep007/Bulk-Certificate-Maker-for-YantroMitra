@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './Excel.css';
 import {OutTable, ExcelRenderer} from 'react-excel-renderer';
 import { Col, Input, InputGroup, InputGroupAddon, FormGroup, Label, Button, Fade, FormFeedback, Container, Card } from 'reactstrap';
+import axios from 'axios';
+import { saveAs } from 'file-saver';
+
+import '../cert/Cert.css';
 
 class Excel extends Component {
   constructor(props){
@@ -11,13 +15,29 @@ class Excel extends Component {
       dataLoaded: false,
       isFormInvalid: false,
       rows: null,
-      cols: null
+      cols: null,
+      name: '',
+      receiptId: 0,
+      price1: 0,
+      price2: 0,
     }
     this.fileHandler = this.fileHandler.bind(this);
     this.toggle = this.toggle.bind(this);
     this.openFileBrowser = this.openFileBrowser.bind(this);
     this.renderFile = this.renderFile.bind(this);
     this.fileInput = React.createRef();
+  }
+
+  handleChange = ({ target: { value, name }}) => this.setState({ [name]: value })
+
+  createAndDownloadPdf = () => {
+    axios.post('/create-pdf', this.state)
+      .then(() => axios.get('fetch-pdf', { responseType: 'blob' }))
+      .then((res) => {
+        const pdfBlob = new Blob([res.data], { type: 'application/pdf' });
+
+        saveAs(pdfBlob, 'newPdf.pdf');
+      })
   }
 
   renderFile = (fileObj) => {
@@ -33,7 +53,7 @@ class Excel extends Component {
             rows: resp.rows
           });
 
-            console.log(resp.rows[2][2]);
+            console.log(resp.rows[1][1]);
               
           
           
@@ -115,6 +135,10 @@ class Excel extends Component {
           </Card>  
         </div>}
         </Container>
+        <div className="App">
+       
+        <button onClick={this.createAndDownloadPdf}>Download PDF</button>
+      </div>
       </div>
     );
   }

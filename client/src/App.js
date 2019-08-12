@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Cert from './components/cert/Cert'
 import Excel from "./components/excel/Excel"
 
 class App extends Component {
@@ -8,7 +7,7 @@ class App extends Component {
             <div>
                 
                 <Excel />
-                <Cert /> 
+                
             </div>
         )
     }
