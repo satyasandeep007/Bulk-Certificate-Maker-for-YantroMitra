@@ -27,19 +27,27 @@ class Excel extends Component {
 
   
 
-  createAndDownloadPdf = () => {
+buttonPress = () => {
+  
+   for (let index = 1 ; index < this.state.rows.length; index++) {
+    this.createAndDownloadPdf(index) 
+     
+   }
+  
+  
+  
+}
 
-      axios.post('/create-pdf', this.state)
-      .then(() => axios.get('fetch-pdf', { responseType: 'blob' }))
+
+
+  createAndDownloadPdf = (index) => {
+
+      axios.post('/create-pdf',{state:this.state,number:index})
+      .then(() => axios.get(`fetch-pdf?ID=${index}`, { responseType: 'blob' }))
       .then((res) => {
         const pdfBlob = new Blob([res.data], { type: 'application/pdf' })
-          saveAs(pdfBlob, `${this.state.rows[this.state.i][1]}.pdf`);
-        }).then(() => {
-          this.setState({
-            i:this.state.i+1
-          })
-        }
-        )
+          saveAs(pdfBlob, `${this.state.rows[index][1]}.pdf`);
+        })
 
       
     }
@@ -139,7 +147,7 @@ class Excel extends Component {
         </Container>
         <div className="App">
        
-        <button onClick={this.createAndDownloadPdf}>Download PDFs</button>
+        <button onClick={this.buttonPress}>Download PDFs</button>
       </div>
     
       </div>
