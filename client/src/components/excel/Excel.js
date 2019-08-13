@@ -16,7 +16,7 @@ class Excel extends Component {
       isFormInvalid: false,
       rows: null,
       cols: null,
-      i:1
+      isToggleOn:true
     }
     this.fileHandler = this.fileHandler.bind(this);
     this.toggle = this.toggle.bind(this);
@@ -26,13 +26,26 @@ class Excel extends Component {
   }
 
   
+	
 
 buttonPress = () => {
-  
-   for (let index = 1 ; index < this.state.rows.length; index++) {
-    this.createAndDownloadPdf(index) 
+
+  if(this.state.rows){
+
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+    
+     for (let index = 1 ; index < this.state.rows.length; index++) {
+      this.createAndDownloadPdf(index) 
+       
+     }
+
      
-   }
+  }else{
+    
+  }
+  
   
   
   
@@ -147,7 +160,7 @@ buttonPress = () => {
         </Container>
         <div className="App">
        
-        <button onClick={this.buttonPress}>Download PDFs</button>
+        <button onClick={this.buttonPress}>{ this.state.isToggleOn ? 'Download PDFs' : 'Creating PDFs......'}</button>
       </div>
     
       </div>
