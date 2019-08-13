@@ -16,11 +16,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 app.post('/create-pdf', (req, res) => {
-
-    
-
     pdf.create(pdfTemplate(req.body,req.body.i),options).toFile('result.pdf', (err) => {
-        if(err) {
+                    
+if(err) {
             res.send(Promise.reject());
         }
 
