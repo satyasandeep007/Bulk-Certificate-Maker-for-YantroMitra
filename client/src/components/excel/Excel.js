@@ -5,7 +5,6 @@ import { Col, Input, InputGroup, InputGroupAddon, FormGroup, Label, Button, Fade
 import axios from 'axios';
 import { saveAs } from 'file-saver';
 
-import '../cert/Cert.css';
 
 class Excel extends Component {
   constructor(props){
@@ -43,12 +42,8 @@ buttonPress = () => {
 
      
   }else{
-    
-  }
-  
-  
-  
-  
+
+  } 
 }
 
 
@@ -158,9 +153,27 @@ buttonPress = () => {
           </Card>  
         </div>}
         </Container>
+
+
+
+
         <div className="App">
-       
-        <button onClick={this.buttonPress}>{ this.state.isToggleOn ? 'Download PDFs' : 'Creating PDFs......'}</button>
+
+        
+        <div className="btn-group btn-group-toggle" data-toggle="buttons">
+  
+  <label className="btn btn-secondary">
+    <input type="radio" name="options" id="option1" autocomplete="off" /> State
+  </label>
+  <label className="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off" /> Grade
+  </label>
+</div>
+<div><p></p></div>
+       <div>
+       <button onClick={this.buttonPress}>{ this.state.isToggleOn ? 'Download PDFs' : 'Creating PDFs......'}</button>
+       </div>
+      
       </div>
     
       </div>

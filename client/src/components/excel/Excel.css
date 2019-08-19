@@ -85,26 +85,14 @@
       text-align: center;
   }
   
-  .jumbotron-background {
-      
-      border-radius: 0rem !important;
-      color: white
-  }
-  
-  .jumbotron-button {
-      color: #fff !important;
-      background-color: transparent !important;
-      border-color: lightgrey !important;
-  }
-  
-  .jumbotron-button:hover {
-      color: #fff !important;
-      background-color: #5a6268 !important;
-      border-color: #545b62 !important;
-  }
+ 
   
   .restrict-card {
       height: 175px;
       overflow-y: overlay;
   }
   
+  .btn-group btn-group-toggle {
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+  }

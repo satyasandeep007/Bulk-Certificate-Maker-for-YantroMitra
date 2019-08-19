@@ -1,133 +1,139 @@
 module.exports = ({ rows },i) => {
    
-   
-    const today = new Date();
 return `
-    <!doctype html>
-    <html>
-       <head>
-          <meta charset="utf-8">
-          <title>PDF Result Template</title>
-          <style>
-             .invoice-box {
-             max-width: 800px;
-             margin: auto;
-             padding: 30px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>king</title>
+      <link href="https://fonts.googleapis.com/css?family=Cinzel|Montserrat&display=swap" rel="stylesheet">
+
+      <style>
+
+.main{
+      border: 15px  solid;
+      border-color: dimgray; 
+      margin-top:2%;
+     
+      padding:auto;                                                                 
+} 
+      .logo{ 
+         padding-top: 5%;
+      }
+            .logo1{
+            padding-left: 5%;  
+            }
+            .logo2{
+            padding-left: 68%;                                                                                                                                                                                                                                                                                                                                                        
+            }
+
+      
+      .body{
+      text-align: center;
+      margin-left: 25%;
+      margin-right: 25%;                 
+      margin-bottom: 2%;
+      color: #393a4e;   
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9em;   
+      line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+      }
+
+     .title{
+    
+      text-align: center;
+      font-family: 'Cinzel', serif;
+      color : #c9a04b;
+      line-height-step: 1em;
+
+      }     
+
+      .awarded{                                                                                                                                                                                                                                                                                                                 
+      text-align: center;
+      color: #393a4e;   
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1em; 
+      }
+
+      .name{
+      text-align: center;
+      font-family: 'Cinzel', serif;
+      color : #c9a04b;
+      font-size: 200%;
+      }
+
+
+
+
             
-             font-size: 16px;
-             line-height: 24px;
-             font-family: 'Helvetica Neue', 'Helvetica',
-             color: #555;
-             }
-             .margin-top {
-             margin-top: 50px;
-             }
-             .justify-center {
-             text-align: center;
-             }
-             .invoice-box table {
-             width: 100%;
-             line-height: inherit;
-             text-align: left;
-             }
-             .invoice-box table td {
-             padding: 5px;
-             vertical-align: top;
-             }
-             .invoice-box table tr td:nth-child(2) {
-             text-align: right;
-             }
-             .invoice-box table tr.top table td {
-             padding-bottom: 20px;
-             }
-             .invoice-box table tr.top table td.title {
-             font-size: 45px;
-             line-height: 45px;
-             color: #333;
-             }
-             .invoice-box table tr.information table td {
-             padding-bottom: 40px;
-             }
-             .invoice-box table tr.heading td {
-             background: #eee;
-             border-bottom: 1px solid #ddd;
-             font-weight: bold;
-             }
-             .invoice-box table tr.details td {
-             padding-bottom: 20px;
-             }
-             .invoice-box table tr.item td {
-             border-bottom: 1px solid #eee;
-             }
-             .invoice-box table tr.item.last td {
-             border-bottom: none;
-             }
-             .invoice-box table tr.total td:nth-child(2) {
-             border-top: 2px solid #eee;
-             font-weight: bold;
-             }
-             @media only screen and (max-width: 600px) {
-             .invoice-box table tr.top table td {
-             width: 100%;
-             display: block;
-             text-align: center;
-             }
-             .invoice-box table tr.information table td {
-             width: 100%;
-             display: block;
-             text-align: center;
-             }
-             }
-          </style>
-       </head>
-       <body>
-          <div class="invoice-box">
-             <table cellpadding="0" cellspacing="0">
-                <tr class="top">
-                   <td colspan="2">
-                      <table>
-                         <tr>
-                            <td class="title"><img  src="http://yantromitra.in/img/logo-2.png"
-                               style="width:100%; max-width:156px;"></td>
-                            <td>
-                               Genetated on ${`${today.getDate()}. ${today.getMonth() + 1}. ${today.getFullYear()}.`}
-                            </td>
-                         </tr>
-                      </table>
-                   </td>
-                </tr>
-                <tr class="information">
-                   <td colspan="2">
-                      <table>
-                         <tr>
-                            <td>
-                               Name: ${rows[i][1]}
-                            </td>
-                            <td>
-                               Section: ${rows[i][2]}
-                            </td>
-                         </tr>
-                      </table>
-                   </td>
-                </tr>
-                
-               
-                <tr class="item">
-                     <td>${rows[i][3]}</td>
-                     <td>${rows[i][4]}</td>
-                     <td>${rows[i][5]}</td>
-                     <td>${rows[i][6]}</td>
-                     <td>${rows[i][7]}</td>
-                     <td>${rows[i][8]}</td>
-                     <td>${rows[i][9]}</td>
-                     <td>${rows[i][10]}</td>
-                     <td>${rows[i][11]}</td>
-                </tr>
-             </table>
-             <br />
-             <h1 class="justify-center">Has been awarded the certificate of participation</h1>
-          </div>
-       </body>
-    </html>
+      </style> 
+      
+</head>
+
+<body>
+  
+      <div class="main">   
+
+           
+            
+            <table style="width:100%;align-items:center;margin-top:4%;">
+
+            <tr>
+            <td style="text-align:center;"> <img  src="${rows[i][13]}"></td>
+            <td style="text-align:center;"> <img  src="${rows[i][12]}"></td>
+            <td style="text-align:center;"> <img  src="${rows[i][13]}"></td>
+            </tr>
+           
+            </table>
+
+
+            <div class="title">
+
+                  <h1> CERTIFICATE OF APPRECIATION </h1>
+            
+            </div>
+
+            <div class="awarded">
+
+                  <h2>This certificate is awarded to </h2>
+
+            </div>
+
+            <div class="name">
+
+                  <h2>${rows[i][1]}</h2>
+
+            </div>
+            <div class="body">
+                  <h3>        Of class ${rows[i][2]}, ${rows[i][4]} has been awarded
+                              grade ${rows[i][7]} in ${rows[i][3]} 
+                              Conducted in ${rows[i][6]},on ${rows[i][5]}.
+                  </h3>
+            </div>
+
+          
+
+
+<table style="width:100%;align-items:center;margin-top:9%;">
+
+<tr>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][8]}</h3></td>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][8]}</h3></td>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][10]}</h3></td>
+</tr>
+<tr>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][9]}</h4></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][9]}</h4></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][11]}</h4></td>
+  </tr>
+</table>
+
+      
+</body>
+</html>     
+    
+           
     `;
 };
