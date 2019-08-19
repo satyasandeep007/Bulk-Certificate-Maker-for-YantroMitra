@@ -81,9 +81,9 @@ module.exports = ({ rows,options,certi },i) => {
                 <table style="width:100%;align-items:center;margin-top:4%;">
     
                 <tr>
-                <td style="text-align:center;"> <img  src="${rows[i][12]}"></td>
-            
                 <td style="text-align:center;"> <img  src="${rows[i][13]}"></td>
+            
+                <td style="text-align:center;"> <img  src="${rows[i][14]}"></td>
                 </tr>
                
                 </table>
@@ -108,9 +108,9 @@ module.exports = ({ rows,options,certi },i) => {
                 </div>
                 <div class="body">
                  
-                      <h3>        Of class ${rows[i][2]}, ${rows[i][4]} has been awarded
+                      <h3>        Of class ${rows[i][2]}, ${rows[i][4]} for performance assessed as 
                                   grade ${rows[i][7]} in ${rows[i][3]} 
-                                  Conducted in ${rows[i][6]}, on ${rows[i][5]}.
+                                  Conducted at ${rows[i][6]}, on ${rows[i][5]}.
                       </h3>
                 </div>
     
@@ -120,14 +120,14 @@ module.exports = ({ rows,options,certi },i) => {
     <table style="width:100%;align-items:center;margin-top:9%;">
     
     <tr>
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][8]}</h3></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][9]}</h3></td>
   
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][10]}</h3></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][11]}</h3></td>
     </tr>
     <tr>
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][9]}</h4></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][10]}</h4></td>
       
-        <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][11]}</h4></td>
+        <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][12]}</h4></td>
       </tr>
     </table>
     

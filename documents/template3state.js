@@ -106,9 +106,9 @@ return `
             </div>
             <div class="body">
              
-                  <h3>        Of class ${rows[i][2]}, ${rows[i][4]} has been awarded
-                              grade ${rows[i][7]} in ${rows[i][3]} 
-                              Conducted in ${rows[i][6]}, on ${rows[i][5]}.
+                  <h3>Of class ${rows[i][2]}, ${rows[i][4]}. For Excellent Performance in
+                  ${rows[i][3]} in ${rows[i][8]} category 
+                 Conducted at ${rows[i][6]}, on ${rows[i][5]}.
                   </h3>
             </div>
 
@@ -118,14 +118,14 @@ return `
 <table style="width:100%;align-items:center;margin-top:9%;">
 
 <tr>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;"><h3>${rows[i][8]}</h3></td>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;"><h3>${rows[i][8]}</h3></td>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;"><h3>${rows[i][10]}</h3></td>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;"><h3>${rows[i][9]}</h3></td>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;"><h3>${rows[i][11]}</h3></td>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;"><h3>${rows[i][16]}</h3></td>
 </tr>
 <tr>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][9]}</h4></td>
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][9]}</h4></td>
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][11]}</h4></td>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][10]}</h4></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][12]}</h4></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][17]}</h4></td>
   </tr>
 </table>
 
