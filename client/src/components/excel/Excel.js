@@ -15,7 +15,9 @@ class Excel extends Component {
       isFormInvalid: false,
       rows: null,
       cols: null,
-      isToggleOn:true
+      isToggleOn:true,
+      options:2,
+      certi:"State"
     }
     this.fileHandler = this.fileHandler.bind(this);
     this.toggle = this.toggle.bind(this);
@@ -23,7 +25,8 @@ class Excel extends Component {
     this.renderFile = this.renderFile.bind(this);
     this.fileInput = React.createRef();
   }
-
+  
+  handleChange = ({ target: { value, name }}) => this.setState({ [name]: value })
   
 	
 
@@ -159,17 +162,35 @@ buttonPress = () => {
 
         <div className="App">
 
+
+
+        <p></p>
         
-        <div className="btn-group btn-group-toggle" data-toggle="buttons">
+        <div >
   
-  <label className="btn btn-secondary">
-    <input type="radio" name="options" id="option1" autocomplete="off" /> State
-  </label>
-  <label className="btn btn-secondary">
-    <input type="radio" name="options" id="option2" autocomplete="off" /> Grade
-  </label>
+  
+  <div class="btn-group" role="group" aria-label="Basic example">
+  <button type="radio" name="options" className="btn btn-secondary" value="2" onClick={this.handleChange}>2 Logos</button>
+ 
+  <button type="radio" name="options" className="btn btn-secondary" value="3" onClick={this.handleChange}>3 Logos</button>
+
 </div>
-<div><p></p></div>
+<p></p>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="radio" name="certi" className="btn btn-secondary" value="State" onClick={this.handleChange}>State</button>
+ 
+  <button type="radio" name="certi" className="btn btn-secondary" value="Grade" onClick={this.handleChange}>Grade</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+<p></p>
        <div>
        <button onClick={this.buttonPress}>{ this.state.isToggleOn ? 'Download PDFs' : 'Creating PDFs......'}</button>
        </div>

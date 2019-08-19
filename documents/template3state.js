@@ -1,4 +1,4 @@
-module.exports = ({ rows },i) => {
+module.exports = ({ rows,options,certi },i) => {
    
 return `
 <!DOCTYPE html>
@@ -11,12 +11,10 @@ return `
       <link href="https://fonts.googleapis.com/css?family=Cinzel|Montserrat&display=swap" rel="stylesheet">
 
       <style>
-
 .main{
       border: 15px  solid;
-      border-color: dimgray; 
+      border-color: #011638; 
       margin-top:2%;
-     
       padding:auto;                                                                 
 } 
       .logo{ 
@@ -45,7 +43,7 @@ return `
     
       text-align: center;
       font-family: 'Cinzel', serif;
-      color : #c9a04b;
+      color : #CCC7B9;
       line-height-step: 1em;
 
       }     
@@ -60,7 +58,7 @@ return `
       .name{
       text-align: center;
       font-family: 'Cinzel', serif;
-      color : #c9a04b;
+      color : #CCC7B9;
       font-size: 200%;
       }
 
@@ -107,9 +105,10 @@ return `
 
             </div>
             <div class="body">
+             
                   <h3>        Of class ${rows[i][2]}, ${rows[i][4]} has been awarded
                               grade ${rows[i][7]} in ${rows[i][3]} 
-                              Conducted in ${rows[i][6]},on ${rows[i][5]}.
+                              Conducted in ${rows[i][6]}, on ${rows[i][5]}.
                   </h3>
             </div>
 
@@ -119,9 +118,9 @@ return `
 <table style="width:100%;align-items:center;margin-top:9%;">
 
 <tr>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][8]}</h3></td>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][8]}</h3></td>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][10]}</h3></td>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;"><h3>${rows[i][8]}</h3></td>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;"><h3>${rows[i][8]}</h3></td>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;"><h3>${rows[i][10]}</h3></td>
 </tr>
 <tr>
 <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][9]}</h4></td>
