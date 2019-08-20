@@ -82,7 +82,7 @@ module.exports = ({ rows,options,certi },i) => {
     
                 <div class="title">
     
-                      <h3> CERTIFICATE OF APPRECIATION </h3>
+                      <h2> CERTIFICATE OF APPRECIATION </h2>
                 
                 </div>
     
@@ -99,10 +99,10 @@ module.exports = ({ rows,options,certi },i) => {
                 </div>
                 <div class="body">
                  
-                      <h6>        Of class ${rows[i][2]}, ${rows[i][4]} for performance assessed as 
+                      <h2>        Of class ${rows[i][2]}, ${rows[i][4]} for performance assessed as 
                                   grade ${rows[i][7]} in ${rows[i][3]} .
                                   Conducted at ${rows[i][6]}, on ${rows[i][5]}.
-                      </h6>
+                      </h2>
                 </div>
     
              
