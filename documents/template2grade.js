@@ -19,16 +19,7 @@ module.exports = ({ rows,options,certi },i) => {
          
           padding:auto;                                                                 
     } 
-          .logo{ 
-             padding-top: 5%;
-          }
-                .logo1{
-                padding-left: 5%;  
-                }
-                .logo2{
-                padding-left: 68%;                                                                                                                                                                                                                                                                                                                                                        
-                }
-    
+         
           
           .body{
           text-align: center;
