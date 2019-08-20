@@ -19,16 +19,7 @@ module.exports = ({ rows,options,certi },i) => {
          
           padding:auto;                                                                 
     } 
-          .logo{ 
-             padding-top: 5%;
-          }
-                .logo1{
-                padding-left: 5%;  
-                }
-                .logo2{
-                padding-left: 68%;                                                                                                                                                                                                                                                                                                                                                        
-                }
-    
+          
           
           .body{
           text-align: center;
@@ -121,12 +112,10 @@ module.exports = ({ rows,options,certi },i) => {
     
     <tr>
     <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;"><h3>${rows[i][9]}</h3></td>
-  
     <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;"><h3>${rows[i][11]}</h3></td>
     </tr>
     <tr>
     <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][10]}</h4></td>
-      
         <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][12]}</h4></td>
       </tr>
     </table>
