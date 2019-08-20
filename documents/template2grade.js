@@ -117,17 +117,17 @@ module.exports = ({ rows,options,certi },i) => {
               
     
     
-    <table style="width:100%;align-items:center;margin-top:9%;">
+    <table style="width:100%;align-items:center;margin-top:0%;">
     
     <tr>
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][9]}</h3></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h4>${rows[i][9]}</h4></td>
   
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][11]}</h3></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h4>${rows[i][11]}</h4></td>
     </tr>
     <tr>
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][10]}</h4></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; ">${rows[i][10]}</td>
       
-        <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][12]}</h4></td>
+        <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; ">${rows[i][12]}</td>
       </tr>
     </table>
     
