@@ -111,7 +111,7 @@ module.exports = ({ rows,options,certi },i) => {
     <table style="width:100%;align-items:center;margin-top:0%;padding:0px;">
     
     <tr>
-//     <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;padding:0px;font-size:100%;"><h3>${rows[i][9]}</h3></td>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;padding:0px;font-size:100%;"><h3>${rows[i][9]}</h3></td>
     <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;padding:0px;font-size:100%;"><h3>${rows[i][11]}</h3></td>
     </tr>
     <tr>

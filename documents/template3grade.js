@@ -61,7 +61,7 @@ return `
       text-align: center;
       font-family: 'Cinzel', serif;
       color : #c9a04b;
-      font-size: 200%;
+      font-size: 100%;
       }
 
 
@@ -91,19 +91,19 @@ return `
 
             <div class="title">
 
-                  <h1> CERTIFICATE OF APPRECIATION </h1>
+                  <h2> CERTIFICATE OF APPRECIATION </h2>
             
             </div>
 
             <div class="awarded">
 
-                  <h2>This certificate is awarded to </h2>
+                  <h3>This certificate is awarded to </h3>
 
             </div>
 
             <div class="name">
 
-                  <h2>${rows[i][1]}</h2>
+                  <h1>${rows[i][1]}</h1>
 
             </div>
             <div class="body">
@@ -117,19 +117,19 @@ return `
           
 
 
-<table style="width:100%;align-items:center;margin-top:9%;">
-
-<tr>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][9]}</h3></td>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][11]}</h3></td>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h3>${rows[i][16]}</h3></td>
-</tr>
-<tr>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][10]}</h4></td>
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][12]}</h4></td>
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; "><h4>${rows[i][17]}</h4></td>
-  </tr>
-</table>
+            <table style="width:100%;align-items:center;margin-top:0%;padding:0px;">
+    
+            <tr>
+        <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;padding:0px;font-size:100%;"><h3>${rows[i][9]}</h3></td>
+            <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;padding:0px;font-size:100%;"><h3>${rows[i][11]}</h3></td>
+            <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;padding:0px;font-size:100%;"><h3>${rows[i][16]}</h3></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e;padding:0px;font-size:80%; ">${rows[i][10]}</td>
+                <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e;padding:0px;font-size:80%; ">${rows[i][12]}</td>
+                <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e;padding:0px;font-size:80%; ">${rows[i][17]}</td>
+              </tr>
+            </table>
 
       
 </body>
