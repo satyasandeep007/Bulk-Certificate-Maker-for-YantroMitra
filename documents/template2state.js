@@ -23,8 +23,8 @@ module.exports = ({ rows,options,certi },i) => {
           
           .body{
           text-align: center;
-          margin-left: 25%;
-          margin-right: 25%;                 
+          margin-left: 20%;
+          margin-right: 20%;                 
           margin-bottom: 2%;
           color: #393a4e;   
           font-family: 'Montserrat', sans-serif;
