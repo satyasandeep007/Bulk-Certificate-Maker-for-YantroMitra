@@ -72,9 +72,9 @@ module.exports = ({ rows,options,certi },i) => {
                 <table style="width:100%;align-items:center;margin-top:4%;">
     
                 <tr>
-                <td style="text-align:center;"> <img  src="${rows[i][12]}"></td>
-            
                 <td style="text-align:center;"> <img  src="${rows[i][13]}"></td>
+            
+                <td style="text-align:center;"> <img  src="${rows[i][14]}"></td>
                 </tr>
                
                 </table>
@@ -82,13 +82,13 @@ module.exports = ({ rows,options,certi },i) => {
     
                 <div class="title">
     
-                      <h1> CERTIFICATE OF APPRECIATION </h1>
+                      <h2> CERTIFICATE OF APPRECIATION </h2>
                 
                 </div>
     
                 <div class="awarded">
     
-                      <h2>This certificate is awarded to </h2>
+                      <h3>This certificate is awarded to </h3>
     
                 </div>
     
