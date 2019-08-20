@@ -94,20 +94,18 @@ module.exports = ({ rows,options,certi },i) => {
     
                 <div class="name">
     
-                      <h2>${rows[i][1]}</h2>
+                      <h1>${rows[i][1]}</h1>
     
                 </div>
                 <div class="body">
                  
-                      <p>        Of class ${rows[i][2]}, ${rows[i][4]} for performance assessed as 
+                      <h6>        Of class ${rows[i][2]}, ${rows[i][4]} for performance assessed as 
                                   grade ${rows[i][7]} in ${rows[i][3]} .
                                   Conducted at ${rows[i][6]}, on ${rows[i][5]}.
-                      </p>
+                      </h6>
                 </div>
     
-              <p></p>
-              <p></p>
-              <p></p>
+             
     
     
     <table style="width:100%;align-items:center;margin-top:0%;padding:0px;">
