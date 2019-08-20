@@ -52,7 +52,7 @@ module.exports = ({ rows,options,certi },i) => {
           text-align: center;
           font-family: 'Cinzel', serif;
           color : #CCC7B9;
-          font-size: 200%;
+          font-size: 100%;
           }
     
     
