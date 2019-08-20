@@ -52,7 +52,7 @@ module.exports = ({ rows,options,certi },i) => {
           text-align: center;
           font-family: 'Cinzel', serif;
           color : #c9a04b;
-          font-size: 200%;
+          font-size: 100%;
           }
     
     
@@ -82,13 +82,13 @@ module.exports = ({ rows,options,certi },i) => {
     
                 <div class="title">
     
-                      <h1> CERTIFICATE OF APPRECIATION </h1>
+                      <h3> CERTIFICATE OF APPRECIATION </h3>
                 
                 </div>
     
                 <div class="awarded">
     
-                      <h2>This certificate is awarded to </h2>
+                      <h4>This certificate is awarded to </h4>
     
                 </div>
     
@@ -99,10 +99,10 @@ module.exports = ({ rows,options,certi },i) => {
                 </div>
                 <div class="body">
                  
-                      <h3>        Of class ${rows[i][2]}, ${rows[i][4]} for performance assessed as 
+                      <p>        Of class ${rows[i][2]}, ${rows[i][4]} for performance assessed as 
                                   grade ${rows[i][7]} in ${rows[i][3]} .
                                   Conducted at ${rows[i][6]}, on ${rows[i][5]}.
-                      </h3>
+                      </p>
                 </div>
     
               
