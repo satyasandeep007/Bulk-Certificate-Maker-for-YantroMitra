@@ -100,7 +100,7 @@ module.exports = ({ rows,options,certi },i) => {
                 <div class="body">
                  
                       <h3>        Of class ${rows[i][2]}, ${rows[i][4]} for performance assessed as 
-                                  grade ${rows[i][7]} in ${rows[i][3]} 
+                                  grade ${rows[i][7]} in ${rows[i][3]} .
                                   Conducted at ${rows[i][6]}, on ${rows[i][5]}.
                       </h3>
                 </div>
@@ -108,17 +108,15 @@ module.exports = ({ rows,options,certi },i) => {
               
     
     
-    <table style="width:100%;align-items:center;margin-top:0%;">
+    <table style="width:100%;align-items:center;margin-top:0%;padding:0px;">
     
     <tr>
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h4>${rows[i][9]}</h4></td>
-  
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;"><h4>${rows[i][11]}</h4></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;padding:0px;font-size:100%;">${rows[i][9]}</td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;padding:0px;font-size:100%;">${rows[i][11]}</td>
     </tr>
     <tr>
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; ">${rows[i][10]}</td>
-      
-        <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e; ">${rows[i][12]}</td>
+        <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e;padding:0px;font-size:80%; ">${rows[i][10]}</td>
+        <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e;padding:0px;font-size:80%; ">${rows[i][12]}</td>
       </tr>
     </table>
     
