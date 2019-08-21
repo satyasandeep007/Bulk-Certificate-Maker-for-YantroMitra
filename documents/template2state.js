@@ -36,7 +36,7 @@ module.exports = ({ rows,options,certi },i) => {
         
           text-align: center;
           font-family: 'Cinzel', serif;
-          color : #CCC7B9;
+          color : #2f3542;
           line-height-step: 1em;
     
           }     
