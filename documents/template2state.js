@@ -100,7 +100,7 @@ module.exports = ({ rows,options,certi },i) => {
                 </div>
                 <div class="body">
                  
-                      <p>        Of class ${rows[i][2]}, ${rows[i][4]}. For Excellent Performance in
+                      <p>        Of <i>"Class ${rows[i][2]}"</i>, ${rows[i][4]}. For Excellent Performance in
                                    ${rows[i][3]} in ${rows[i][8]} category 
                                   Conducted at ${rows[i][6]}, on ${rows[i][5]}.
                       </p>
