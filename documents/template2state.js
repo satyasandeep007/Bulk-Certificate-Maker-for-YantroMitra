@@ -78,9 +78,27 @@ module.exports = ({ rows,options,certi },i) => {
                 </tr>
                
                 </table>
+                <div class="title">
+
+            <h3>State Level Inter-School Science & Robotics Competition</h3>  
+                                  <h3> CERTIFICATE OF APPRECIATION </h3>
+                            
+                            </div>
+                
+                            <div class="awarded">
+                
+                                  <h4>This certificate is awarded to </h4>
+                
+                            </div>
+                
+                            <div class="name">
+                
+                                  <h2>${rows[i][1]}</h2>
+                
+                            </div>
     
     
-            1,
+            
                 <div class="body">
                  
                       <p>        Of <i>"Class ${rows[i][2]}"</i>, <strong>${rows[i][4]}</strong>. For Excellent Performance in
