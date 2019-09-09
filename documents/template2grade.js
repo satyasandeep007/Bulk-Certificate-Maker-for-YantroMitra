@@ -99,9 +99,9 @@ module.exports = ({ rows,options,certi },i) => {
                 </div>
                 <div class="body">
                  
-                      <h3>        Of class ${rows[i][2]}, ${rows[i][4]} for performance assessed as 
-                                  grade ${rows[i][7]} in ${rows[i][3]} .
-                                  Conducted at ${rows[i][6]}, on ${rows[i][5]}.
+                      <h3>        Of <b>class "${rows[i][2]}", ${rows[i][4]}</b> for performance assessed as 
+                                  grade <b>${rows[i][7]}</b> in <b>${rows[i][3]}</b>.
+                                  Conducted at <b>${rows[i][6]}</b>, on <b>${rows[i][5]}</b>.
                       </h3>
                 </div>
     
