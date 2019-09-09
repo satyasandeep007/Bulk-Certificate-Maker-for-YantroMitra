@@ -89,21 +89,22 @@ return `
 
             <div class="title">
 
-                  <h2> CERTIFICATE OF APPRECIATION </h2>
-            
-            </div>
-
-            <div class="awarded">
-
-                  <h3>This certificate is awarded to </h3>
-
-            </div>
-
-            <div class="name">
-
-                  <h1>${rows[i][1]}</h1>
-
-            </div>
+            <h3>State Level Inter-School Science & Robotics Competition</h3>  
+                                  <h3> CERTIFICATE OF APPRECIATION </h3>
+                            
+                            </div>
+                
+                            <div class="awarded">
+                
+                                  <h4>This certificate is awarded to </h4>
+                
+                            </div>
+                
+                            <div class="name">
+                
+                                  <h2>${rows[i][1]}</h2>
+                
+                            </div>
             <div class="body">
              
                   <h3>Of class ${rows[i][2]}, ${rows[i][4]}. For Excellent Performance in
