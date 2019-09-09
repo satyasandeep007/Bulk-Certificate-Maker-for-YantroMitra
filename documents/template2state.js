@@ -81,14 +81,15 @@ module.exports = ({ rows,options,certi },i) => {
     
     
                 <div class="title">
-    
-                      <h2> CERTIFICATE OF APPRECIATION </h2>
+
+<h3>State Level Inter-School Science & Robotics Competition</h3>  
+                      <h3> CERTIFICATE OF APPRECIATION </h3>
                 
                 </div>
     
                 <div class="awarded">
     
-                      <h3>This certificate is awarded to </h3>
+                      <h4>This certificate is awarded to </h4>
     
                 </div>
     
