@@ -95,15 +95,15 @@ module.exports = ({ rows,options,certi },i) => {
     
                 <div class="name">
     
-                      <h1>${rows[i][1]}</h1>
+                      <h2>${rows[i][1]}</h2>
     
                 </div>
                 <div class="body">
                  
-                      <h3>        Of class ${rows[i][2]}, ${rows[i][4]}. For Excellent Performance in
+                      <p>        Of class ${rows[i][2]}, ${rows[i][4]}. For Excellent Performance in
                                    ${rows[i][3]} in ${rows[i][8]} category 
                                   Conducted at ${rows[i][6]}, on ${rows[i][5]}.
-                      </h3>
+                      </p>
                 </div>
     
               
