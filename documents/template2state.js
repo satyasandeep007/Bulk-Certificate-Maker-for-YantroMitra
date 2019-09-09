@@ -26,7 +26,7 @@ module.exports = ({ rows,options,certi },i) => {
           margin-left: 20%;
           margin-right: 20%;                 
           margin-bottom: 2%;
-          color: #393a4e;   
+         
           font-family: 'Montserrat', sans-serif;
           font-size: 0.9em;   
           line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
