@@ -28,7 +28,7 @@ module.exports = ({ rows,options,certi },i) => {
           margin-bottom: 2%;
           color: #393a4e;   
           font-family: 'Montserrat', sans-serif;
-          font-size: 0.9em;   
+           
           line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
           }
     
@@ -99,7 +99,7 @@ module.exports = ({ rows,options,certi },i) => {
                 </div>
                 <div class="body">
                  
-                      <h3>        Of <b>class "${rows[i][2]}", ${rows[i][4]}</b> for performance assessed as 
+                      <h3>        Of <b>"class ${rows[i][2]}", ${rows[i][4]}</b> for performance assessed as 
                                   grade <b>${rows[i][7]}</b> in <b>${rows[i][3]}</b>.
                                   Conducted at <b>${rows[i][6]}</b>, on <b>${rows[i][5]}</b>.
                       </h3>
