@@ -57,6 +57,7 @@ module.exports = ({ rows,options,certi },i) => {
     .ab1{
           color: #2C3335;
           text-decoration-style: solid;
+          font-weight : 900;
     }
     
     
