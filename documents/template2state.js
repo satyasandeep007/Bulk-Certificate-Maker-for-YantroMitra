@@ -27,9 +27,7 @@ module.exports = ({ rows,options,certi },i) => {
           margin-right: 20%;                 
           margin-bottom: 2%;
            
-          font-family: 'Montserrat', sans-serif;
-         
-          line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+          font-family: 'Montserrat', sans-serif;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
           }
     
          .title{
@@ -51,19 +49,19 @@ module.exports = ({ rows,options,certi },i) => {
           .name{
           text-align: center;
           font-family: 'Cinzel', serif;
-          color : #CCC7B9;
+          color : rgb(31, 58, 147);
           font-size: 100%;
           }
-    .ab1{
-          color: #192A56;
-          text-decoration-style: solid;
-          font-weight : 900;
-    }
-    .ab2{
-      color: red;
-      text-decoration-style: solid;
-      font-weight : 900;
-}
+          .ab1{
+            color: #192A56;
+            
+            font-weight : 900;
+          }
+          .ab2{
+            color: #E71C23;
+            
+            font-weight : 900;
+          }
     
     
     
@@ -120,8 +118,8 @@ module.exports = ({ rows,options,certi },i) => {
     <table style="width:100%;align-items:center;margin-top:0%;padding:0px;">
     
     <tr>
-<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;padding:0px;font-size:100%;"><h3>${rows[i][9]}</h3></td>
-    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #CCC7B9;padding:0px;font-size:100%;"><h3>${rows[i][11]}</h3></td>
+<td style="text-align:center;font-family: 'Montserrat', sans-serif;color : rgb(31, 58, 147);padding:0px;font-size:100%;"><h3>${rows[i][9]}</h3></td>
+    <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : rgb(31, 58, 147);padding:0px;font-size:100%;"><h3>${rows[i][11]}</h3></td>
     </tr>
     <tr>
         <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e;padding:0px;font-size:80%; ">${rows[i][10]}</td>
