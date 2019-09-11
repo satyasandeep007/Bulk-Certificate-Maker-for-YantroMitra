@@ -55,7 +55,8 @@ module.exports = ({ rows,options,certi },i) => {
           font-size: 100%;
           }
     .ab1{
-          color: #EA7773;
+          color: #2C3335;
+          text-decoration-style: solid;
     }
     
     
@@ -103,9 +104,9 @@ module.exports = ({ rows,options,certi },i) => {
             
                 <div class="body">
                  
-                      <p>        Of <span class="ab1">"Class ${rows[i][2]}"</span>, <strong>${rows[i][4]}</strong>. For Excellent Performance in
-                                   ${rows[i][3]} in <strong>${rows[i][8]}</strong> category 
-                                  Conducted at ${rows[i][6]}, on ${rows[i][5]}.
+                      <p>        Of <span class="ab1">"Class ${rows[i][2]}"</span>, <span class="ab1">${rows[i][4]}</span>. For Excellent Performance in
+                      <span class="ab1">${rows[i][3]}</span> in <span class="ab1">${rows[i][8]}</span> category 
+                                  Conducted at <span class="ab1">${rows[i][6]}</span>, on <span class="ab1">${rows[i][5]}</span>.
                       </p>
                 </div>
     
