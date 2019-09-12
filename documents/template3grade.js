@@ -30,24 +30,16 @@ return `
             }
 
       
-            .body{
-                  text-align: center;
-                  margin-left: 15%;
-                  margin-right: 15%;                 
-                  margin-bottom: 2%;
-                  font-size: 0.9em; 
-                  font-family: 'Montserrat', sans-serif;
-                  line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-                  }
-                .ab1{
-                  color: #192A56;
-                  font-weight: 900;
-                }
-                .ab2{
-                  color: #E71C23;
-                  font-weight: 900;
-                }
-          
+      .body{
+      text-align: center;
+      margin-left: 25%;
+      margin-right: 25%;                 
+      margin-bottom: 2%;
+      color: #393a4e;   
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9em;   
+      line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+      }
 
      .title{
     
@@ -115,12 +107,12 @@ return `
 
             </div>
             <div class="body">
-                 
-            <p>        Of <span class="ab1">"Class ${rows[i][2]}"</span>, <span class="ab1">${rows[i][4]}</span>. For Excellent Performance in
-                       <span class="ab2">"${rows[i][3]}"</span> in <span class="ab1">${rows[i][8]}</span> category 
-                       Conducted at <span class="ab1">${rows[i][6]}</span>, on <span class="ab1">${rows[i][5]}</span>.
-            </p>
-      </div>
+             
+                  <h3>Of class ${rows[i][2]}, ${rows[i][4]} for performance assessed as 
+                  grade ${rows[i][7]} in ${rows[i][3]} 
+                  Conducted at ${rows[i][6]}, on ${rows[i][5]}.
+                  </h3>
+            </div>
 
           
 
@@ -128,9 +120,9 @@ return `
             <table style="width:100%;align-items:center;margin-top:0%;padding:0px;">
     
             <tr>
-        <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : rgb(31, 58, 147);padding:0px;font-size:100%;"><h3>${rows[i][9]}</h3></td>
-            <td style="text-align:center;font-family: 'Montserrat', sans-serif;color :rgb(31, 58, 147);padding:0px;font-size:100%;"><h3>${rows[i][11]}</h3></td>
-            <td style="text-align:center;font-family: 'Montserrat', sans-serif;color :rgb(31, 58, 147);padding:0px;font-size:100%;"><h3>${rows[i][16]}</h3></td>
+        <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;padding:0px;font-size:100%;"><h3>${rows[i][9]}</h3></td>
+            <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;padding:0px;font-size:100%;"><h3>${rows[i][11]}</h3></td>
+            <td style="text-align:center;font-family: 'Montserrat', sans-serif;color : #c9a04b;padding:0px;font-size:100%;"><h3>${rows[i][16]}</h3></td>
             </tr>
             <tr>
                 <td style="text-align:center;font-family: 'Montserrat', sans-serif;color: #393a4e;padding:0px;font-size:80%; ">${rows[i][10]}</td>
