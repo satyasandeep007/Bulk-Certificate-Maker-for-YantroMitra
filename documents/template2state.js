@@ -21,15 +21,7 @@ module.exports = ({ rows,options,certi },i) => {
     } 
           
           
-          .body{
-          text-align: center;
-          margin-left: 15%;
-          margin-right: 15%;                 
-          margin-bottom: 2%;
-          font-size: 0.9em; 
-          font-family: 'Montserrat', sans-serif;
-          line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-          }
+        
     
          .title{
         
@@ -53,6 +45,16 @@ module.exports = ({ rows,options,certi },i) => {
           color : rgb(31, 58, 147);
           font-size: 100%;
           }
+
+          .body{
+            text-align: center;
+            margin-left: 15%;
+            margin-right: 15%;                 
+            margin-bottom: 2%;
+            font-size: 0.9em; 
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+            }
           .ab1{
             color: #192A56;
             font-weight: 900;
