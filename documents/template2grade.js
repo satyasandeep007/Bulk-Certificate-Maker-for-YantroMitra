@@ -23,12 +23,13 @@ module.exports = ({ rows,options,certi },i) => {
           
     .body{
       text-align: center;
-      margin-left: 15%;
-      margin-right: 15%;                 
+      margin-left: 25%;
+      margin-right: 25%;                 
       margin-bottom: 2%;
-      font-size: 0.9em; 
+      color: #393a4e;   
       font-family: 'Montserrat', sans-serif;
-      line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+       
+      line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
       }
     .ab1{
       color: #192A56;

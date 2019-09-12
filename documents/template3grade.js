@@ -33,8 +33,8 @@ return `
               
             .body{
                   text-align: center;
-                  margin-left: 15%;
-                  margin-right: 15%;                 
+                  margin-left: 20%;
+                  margin-right: 20%;                 
                   margin-bottom: 2%;
                   font-size: 0.9em; 
                   font-family: 'Montserrat', sans-serif;
