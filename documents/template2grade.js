@@ -21,16 +21,23 @@ module.exports = ({ rows,options,certi },i) => {
     } 
          
           
-          .body{
-          text-align: center;
-          margin-left: 25%;
-          margin-right: 25%;                 
-          margin-bottom: 2%;
-          color: #393a4e;   
-          font-family: 'Montserrat', sans-serif;
-           
-          line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-          }
+    .body{
+      text-align: center;
+      margin-left: 15%;
+      margin-right: 15%;                 
+      margin-bottom: 2%;
+      font-size: 0.9em; 
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.5em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+      }
+    .ab1{
+      color: #192A56;
+      font-weight: 900;
+    }
+    .ab2{
+      color: #E71C23;
+      font-weight: 900;
+    }
     
          .title{
         
@@ -99,9 +106,9 @@ module.exports = ({ rows,options,certi },i) => {
                 </div>
                 <div class="body">
                  
-                      <p>        Of <var>"Class ${rows[i][2]}", ${rows[i][4]}</var> for performance assessed as 
-                                  grade <var>${rows[i][7]}</var> in <var>${rows[i][3]}</var>.
-                                  Conducted at <var>${rows[i][6]}</var>, on <var>${rows[i][5]}</var>.
+                      <p>        Of <span class="ab1">"Class ${rows[i][2]}", ${rows[i][4]}</span> for performance assessed as 
+                                  grade <span class="ab1">${rows[i][7]}</span> in <span class="ab2">${rows[i][3]}</span>.
+                                  Conducted at <span class="ab1">${rows[i][6]}</span>, on <span class="ab1">${rows[i][5]}</span>.
                       </p>
                 </div>
     

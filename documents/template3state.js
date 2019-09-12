@@ -65,7 +65,7 @@ return `
       .name{
       text-align: center;
       font-family: 'Cinzel', serif;
-      color : #CCC7B9;
+      color : rgb(31, 58, 147);
       font-size: 100%;
       }
 
