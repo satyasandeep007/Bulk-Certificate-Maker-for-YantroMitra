@@ -63,7 +63,7 @@ module.exports = ({ rows,options,certi },i) => {
           font-size: 100%;
           }
     
-    h2 {
+    h3 {
       text-decoration: underline;
     }
     
