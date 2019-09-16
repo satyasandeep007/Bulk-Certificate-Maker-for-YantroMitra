@@ -63,7 +63,7 @@ module.exports = ({ rows,options,certi },i) => {
             color: #E71C23;
             font-weight: 900;
           }
-          h2 {
+          h3 {
             text-decoration: underline;
           }
           
