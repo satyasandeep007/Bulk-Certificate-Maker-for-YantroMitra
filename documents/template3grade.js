@@ -74,7 +74,7 @@ return `
       }
 
 
-      h3 {
+      h2 {
             text-decoration: underline;
           }
           
