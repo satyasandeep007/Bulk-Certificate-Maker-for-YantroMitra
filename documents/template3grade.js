@@ -74,7 +74,10 @@ return `
       }
 
 
-
+      h2 {
+            text-decoration: underline;
+          }
+          
 
             
       </style> 
@@ -118,7 +121,7 @@ return `
             <div class="body">
                  
             <p>        Of <span class="ab1">"Class ${rows[i][2]}", ${rows[i][4]}</span> for performance assessed as 
-            <span class="ab1">"grade ${rows[i][7]}"</span> in <span class="ab2">"${rows[i][3]}"</span>.
+            <span class="ab1">"Grade ${rows[i][7]}"</span> in <span class="ab2">"${rows[i][3]}"</span>.
                         Conducted at <span class="ab1">${rows[i][6]}</span>, on <span class="ab1">${rows[i][5]}</span>.
             </p>
       </div>

@@ -69,7 +69,10 @@ return `
       font-size: 100%;
       }
 
-
+      h2 {
+            text-decoration: underline;
+          }
+          
 
 
             
