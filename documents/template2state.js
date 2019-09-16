@@ -63,7 +63,7 @@ module.exports = ({ rows,options,certi },i) => {
             color: #E71C23;
             font-weight: 900;
           }
-          h3:nth-child(2) {
+          .ud {
             text-decoration: underline;
           }
           
@@ -92,7 +92,7 @@ module.exports = ({ rows,options,certi },i) => {
                 <div class="title">
 
             <h3>State Level Inter-School Science & Robotics Competition</h3>  
-                                  <h3> CERTIFICATE OF APPRECIATION </h3>
+                                  <h3 class="ud"> CERTIFICATE OF APPRECIATION </h3>
                             
                             </div>
                 
